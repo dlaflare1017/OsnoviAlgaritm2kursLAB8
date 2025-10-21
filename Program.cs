@@ -46,19 +46,22 @@ class Program
         int N = int.Parse(Console.ReadLine());
 
         double result = 1;
+        int i = 0;
 
         if (N > 0)
         {
-            for (int i = 1; i <= N; i++)
+            while (i < N)
             {
                 result *= A;
+                i++;
             }
         }
         else if (N < 0)
         {
-            for (int i = 1; i <= -N; i++)
+            while (i < -N)
             {
                 result *= A;
+                i++;
             }
             result = 1 / result;
         }
